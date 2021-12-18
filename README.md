@@ -1,2 +1,2 @@
 # gisexpress
-Open-Source CAD &amp; GIS (Turkey)
+Open-Source CAD &amp; GIS
