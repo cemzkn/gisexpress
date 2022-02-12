@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<LocalizedStrings>
+  <xs:schema id="LocalizedStrings" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="LocalizedStrings" msdata:IsDataSet="true" msdata:MainDataTable="Word" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Word" msdata:CaseSensitive="False">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="key" type="xs:string" />
+                <xs:element name="en-US" type="xs:string" minOccurs="0" />
+                <xs:element name="tr-TR" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="UniqueConstraint" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Word" />
+        <xs:field xpath="key" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <Word>
+    <key>Editing Operations</key>
+    <en-US>Editing Operations</en-US>
+    <tr-TR>Düzenleme İşlemleri</tr-TR>
+  </Word>
+  <Word>
+    <key>Editing</key>
+    <en-US>Editing</en-US>
+    <tr-TR>Düzenle</tr-TR>
+  </Word>
+  <Word>
+    <key>AddPolygon</key>
+    <en-US>Polygon</en-US>
+    <tr-TR>Alan</tr-TR>
+  </Word>
+  <Word>
+    <key>AddRectangle</key>
+    <en-US>Rectangle</en-US>
+    <tr-TR>Dikdörtgen </tr-TR>
+  </Word>
+  <Word>
+    <key>AddLine</key>
+    <en-US>Line</en-US>
+    <tr-TR>Çizgi</tr-TR>
+  </Word>
+  <Word>
+    <key>AddPoint</key>
+    <en-US>Point</en-US>
+    <tr-TR>Nokta</tr-TR>
+  </Word>
+  <Word>
+    <key>AddCircle</key>
+    <en-US>Circle</en-US>
+    <tr-TR>Daire</tr-TR>
+  </Word>
+  <Word>
+    <key>AddEllipse</key>
+    <en-US>Ellipse</en-US>
+    <tr-TR>Elips</tr-TR>
+  </Word>
+  <Word>
+    <key>AddArc</key>
+    <en-US>Arc</en-US>
+    <tr-TR>Yay</tr-TR>
+  </Word>
+  <Word>
+    <key>AddGeometry</key>
+    <en-US>Add Geometry</en-US>
+    <tr-TR>Geometri Ekle...</tr-TR>
+  </Word>
+  <Word>
+    <key>TopologyOperations</key>
+    <en-US>Topology Operations</en-US>
+    <tr-TR>Topoloji İşlemleri</tr-TR>
+  </Word>
+  <Word>
+    <key>Polygonize</key>
+    <en-US>Polygonize</en-US>
+    <tr-TR>Çokgen Oluştur</tr-TR>
+  </Word>
+</LocalizedStrings>
