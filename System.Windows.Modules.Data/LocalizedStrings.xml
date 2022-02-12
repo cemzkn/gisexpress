@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<LocalizedStrings>
+  <xs:schema id="LocalizedStrings" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="LocalizedStrings" msdata:IsDataSet="true" msdata:MainDataTable="Word" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Word" msdata:CaseSensitive="False">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="key" type="xs:string" />
+                <xs:element name="en-US" type="xs:string" minOccurs="0" />
+                <xs:element name="tr-TR" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="UniqueConstraint" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Word" />
+        <xs:field xpath="key" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <Word>
+    <key>Data</key>
+    <en-US>Data</en-US>
+    <tr-TR>Veri</tr-TR>
+  </Word>
+  <Word>
+    <key>Data Management</key>
+    <en-US>Data Management</en-US>
+    <tr-TR>Veri Yönetimi</tr-TR>
+  </Word>
+  <Word>
+    <key>DataConnection</key>
+    <en-US>Data Connection</en-US>
+    <tr-TR>Veri Bağlantısı</tr-TR>
+  </Word>
+  <Word>
+    <key>DataConnections</key>
+    <en-US>Data Connections</en-US>
+    <tr-TR>Veri Bağlantıları</tr-TR>
+  </Word>
+  <Word>
+    <key>AddDataConnection</key>
+    <en-US>Add Connection...</en-US>
+    <tr-TR>Bağlantı Ekle...</tr-TR>
+  </Word>
+  <Word>
+    <key>Table</key>
+    <en-US>Table</en-US>
+    <tr-TR>Tablo</tr-TR>
+  </Word>
+  <Word>
+    <key>Tables</key>
+    <en-US>Tables</en-US>
+    <tr-TR>Tablolar</tr-TR>
+  </Word>
+  <Word>
+    <key>ObjectProperties</key>
+    <en-US>Object Properties</en-US>
+    <tr-TR>Obje Özellikleri</tr-TR>
+  </Word>
+  <Word>
+    <key>MapDataLayer.ShowData</key>
+    <en-US>Layer Data</en-US>
+    <tr-TR>Katman Verisi</tr-TR>
+  </Word>
+  <Word>
+    <key>MapDataLayer.EditAttributes</key>
+    <en-US>Layer Attributes</en-US>
+    <tr-TR>Katman Öznitelikleri</tr-TR>
+  </Word>
+  <Word>
+    <key>ShowTableData</key>
+    <en-US>Show Table Data</en-US>
+    <tr-TR>Tablo Verisini Göster</tr-TR>
+  </Word>
+  <Word>
+    <key>AddAsVectorLayer</key>
+    <en-US>Add As Vector Layer</en-US>
+    <tr-TR>Vektör Katmanı Olarak Ekle</tr-TR>
+  </Word>
+  <Word>
+    <key>13C107190C88408EB39909AA9D2CE0A7</key>
+    <en-US>Layer</en-US>
+    <tr-TR>Katman</tr-TR>
+  </Word>
+  <Word>
+    <key>MapLayer(71485356-99AA-4632-978A-C6EAA915DAF8).DisplayName</key>
+    <en-US>Spatial Table</en-US>
+    <tr-TR>Konumsal Tablo</tr-TR>
+  </Word>
+  <Word>
+    <key>MapLayer(71485356-99AA-4632-978A-C6EAA915DAF8).Description</key>
+    <en-US></en-US>
+    <tr-TR></tr-TR>
+  </Word>
+</LocalizedStrings>
