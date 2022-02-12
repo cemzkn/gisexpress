@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<LocalizedStrings>
+  <xs:schema id="LocalizedStrings" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="LocalizedStrings" msdata:IsDataSet="true" msdata:MainDataTable="Word" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Word" msdata:CaseSensitive="False">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="key" type="xs:string" />
+                <xs:element name="en-US" type="xs:string" minOccurs="0" />
+                <xs:element name="tr-TR" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="UniqueConstraint" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Word" />
+        <xs:field xpath="key" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <Word>
+    <key>01_OfficeColors</key>
+    <en-US>Office Colors</en-US>
+    <tr-TR>Ofis Renkleri</tr-TR>
+  </Word>
+  <Word>
+    <key>02_GISColors</key>
+    <en-US>Map Colors</en-US>
+    <tr-TR>Harita Renkleri</tr-TR>
+  </Word>
+  <Word>
+    <key>03_DefaultColors</key>
+    <en-US>Primary / Pastel</en-US>
+    <tr-TR>Temel / Pastel</tr-TR>
+  </Word>
+  <Word>
+    <key>04_WarmColors</key>
+    <en-US>Warm / Cool</en-US>
+    <tr-TR>Sıcak / Serin</tr-TR>
+  </Word>
+  <Word>
+    <key>ThemeColors</key>
+    <en-US>Theme Colors</en-US>
+    <tr-TR>Tema Renkleri</tr-TR>
+  </Word>
+  <Word>
+    <key>StandardColors</key>
+    <en-US>Standard Colors</en-US>
+    <tr-TR>Standart Renkler</tr-TR>
+  </Word>
+  <Word>
+    <key>MoreColors</key>
+    <en-US>More Colors</en-US>
+    <tr-TR>Tüm Renkler</tr-TR>
+  </Word>
+</LocalizedStrings>
