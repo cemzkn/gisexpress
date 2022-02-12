@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<LocalizedStrings>
+  <xs:schema id="LocalizedStrings" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="LocalizedStrings" msdata:IsDataSet="true" msdata:MainDataTable="Word" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Word" msdata:CaseSensitive="False">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="key" type="xs:string" />
+                <xs:element name="en-US" type="xs:string" minOccurs="0" />
+                <xs:element name="tr-TR" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="UniqueConstraint" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Word" />
+        <xs:field xpath="key" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <Word>
+    <key>Google Maps</key>
+    <en-US>Google Maps</en-US>
+    <tr-TR>Google Haritaları</tr-TR>
+  </Word>
+  <Word>
+    <key>MapLayer(BFD93673-890D-4938-A514-BB86A2FE6133).DisplayName</key>
+    <en-US>Google Map</en-US>
+    <tr-TR>Google Haritası</tr-TR>
+  </Word>
+  <Word>
+    <key>MapLayer(BFD93673-890D-4938-A514-BB86A2FE6133).Description</key>
+    <en-US>Use this option to add an online google map layer to your project</en-US>
+    <tr-TR>Projenize bir online google harita katmanı eklemek için bu seçeneği kullanın</tr-TR>
+  </Word>
+  <Word>
+    <key>GoogleMapType</key>
+    <en-US>Map</en-US>
+    <tr-TR>Harita</tr-TR>
+  </Word>
+  <Word>
+    <key>GoogleMapType.RoadsOnly</key>
+    <en-US>Roads</en-US>
+    <tr-TR>Yollar</tr-TR>
+  </Word>
+  <Word>
+    <key>GoogleMapType.StandardRoadmap</key>
+    <en-US>Road Map</en-US>
+    <tr-TR>Yol Haritası</tr-TR>
+  </Word>
+  <Word>
+    <key>GoogleMapType.TerrainOnly</key>
+    <en-US>Terrain</en-US>
+    <tr-TR>Arazi</tr-TR>
+  </Word>
+  <Word>
+    <key>GoogleMapType.Terrain</key>
+    <en-US>Terrain Map</en-US>
+    <tr-TR>Arazi Haritası</tr-TR>
+  </Word>
+  <Word>
+    <key>GoogleMapType.SatelliteOnly</key>
+    <en-US>Satellite</en-US>
+    <tr-TR>Uydu</tr-TR>
+  </Word>
+  <Word>
+    <key>GoogleMapType.Hybrid</key>
+    <en-US>Satellite Map</en-US>
+    <tr-TR>Uydu Haritası</tr-TR>
+  </Word>
+</LocalizedStrings>
