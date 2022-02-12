@@ -221,31 +221,35 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\System.Base\System.Base.csproj">
-      <Project>{657109EF-7A80-4CF3-AF6C-FE192F99A7F6}</Project>
+    <ProjectReference Include="..\..\framework\System.Base\System.Base.csproj">
+      <Project>{657109ef-7a80-4cf3-af6c-fe192f99a7f6}</Project>
       <Name>System.Base</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.CoordinateSystems\System.CoordinateSystems.csproj">
+    <ProjectReference Include="..\..\framework\System.CoordinateSystems\System.CoordinateSystems.csproj">
       <Project>{b9baa5a6-9c7c-414a-b1c6-733b77417a9d}</Project>
       <Name>System.CoordinateSystems</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Data.Base\System.Data.Base.csproj">
+    <ProjectReference Include="..\..\framework\System.Data.Base\System.Data.Base.csproj">
       <Project>{50996028-3dd9-421b-82b7-17596f676f32}</Project>
       <Name>System.Data.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\framework\System.Geometries\System.Geometries.csproj">
+      <Project>{67143bd2-83bd-45a1-bf3f-8548a35111c3}</Project>
+      <Name>System.Geometries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\framework\System.Resources\System.Resources.csproj">
+      <Project>{baaa95cf-14c5-4194-a036-3762e45be743}</Project>
+      <Name>System.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\framework\System.Workspace\System.Workspace.csproj">
+      <Project>{4aaba7b8-e7c5-43cc-816d-96572a79d23c}</Project>
+      <Name>System.Workspace</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Extensions\System.Core.csproj">
       <Project>{657109ef-7a80-4cf3-af6c-fe192f99a7f6}</Project>
       <Name>System.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Geometries\System.Geometries.csproj">
-      <Project>{67143bd2-83bd-45a1-bf3f-8548a35111c3}</Project>
-      <Name>System.Geometries</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\System.Resources\System.Resources.csproj">
-      <Project>{baaa95cf-14c5-4194-a036-3762e45be743}</Project>
-      <Name>System.Resources</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\System.Runtime\System.Runtime.csproj">
+    <ProjectReference Include="..\..\framework\System.Runtime\System.Runtime.csproj">
       <Project>{dd70cc97-ca8f-407f-b60d-2f01ece7942e}</Project>
       <Name>System.Runtime</Name>
     </ProjectReference>
@@ -256,10 +260,6 @@
     <ProjectReference Include="..\System.Windows.Forms.ColorEdit\System.Windows.Forms.ColorEdit.csproj">
       <Project>{d773b0fc-9749-4971-bd1b-eee439d884e5}</Project>
       <Name>System.Windows.Forms.ColorEdit</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\System.Workspace\System.Workspace.csproj">
-      <Project>{4aaba7b8-e7c5-43cc-816d-96572a79d23c}</Project>
-      <Name>System.Workspace</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -401,21 +401,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\System.Base\System.Base.csproj">
+    <ProjectReference Include="..\..\framework\System.Base\System.Base.csproj">
       <Project>{657109ef-7a80-4cf3-af6c-fe192f99a7f6}</Project>
       <Name>System.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\framework\System.Resources\System.Resources.csproj">
+      <Project>{baaa95cf-14c5-4194-a036-3762e45be743}</Project>
+      <Name>System.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\framework\System.Runtime\System.Runtime.csproj">
+      <Project>{dd70cc97-ca8f-407f-b60d-2f01ece7942e}</Project>
+      <Name>System.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="..\System.Extensions\System.Core.csproj">
       <Project>{657109EF-7A80-4CF3-AF6C-FE192F99A7F6}</Project>
       <Name>System.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\System.Resources\System.Resources.csproj">
-      <Project>{BAAA95CF-14C5-4194-A036-3762E45BE743}</Project>
-      <Name>System.Resources</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\System.Runtime\System.Runtime.csproj">
-      <Project>{dd70cc97-ca8f-407f-b60d-2f01ece7942e}</Project>
-      <Name>System.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
