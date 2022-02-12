@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A48FF71B-CFBD-47E9-86B0-58A6D73BC333}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Windows.Forms</RootNamespace>
+    <AssemblyName>System.Windows.Forms.Base</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GISExpress.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm\BaseForm.Designer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\FormCaptionButtonPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ApplicationAboutEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Button\LanguageButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DateTime\DateTimePickerEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DateTime\Days.cs" />
+    <Compile Include="Controls\DateTime\Months.cs" />
+    <Compile Include="Controls\DateTime\ShortDays.cs" />
+    <Compile Include="Controls\LanguageDropDownEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LinkLabelEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Numeric\NumericIntegerEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RichTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SplitEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolBarEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FileDialog\FileOpenDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileDialog\FileSaveDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApplicationSettingsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApplicationSubscriptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LicenseAgreementDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileDialog\FileDialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileDialog\OpenFileEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FileDialog\FileDialogDescriptor.cs" />
+    <Compile Include="FileDialog\FileDialogItem.cs" />
+    <Compile Include="FileDialog\FileSystemItem.cs" />
+    <Compile Include="FileDialog\FileSystemItemCollection.cs" />
+    <Compile Include="GISExpressApplicationContext.cs" />
+    <Compile Include="PopupMenu\PopupMenuEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupMenu\PopupMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PropertyGrid\ListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PropertyGrid\PropertyListEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeView\DropDownTreeEdit.cs" />
+    <Compile Include="Controls\DropDown\DropDownEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BaseEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DropDown\DropDownWebResourceEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HorizontalLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Numeric\GenericNumericEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Spin\SpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeView\TreeViewBaseEdit.cs" />
+    <Compile Include="TreeView\TreeViewExtensions.cs" />
+    <Compile Include="TreeView\ISupportNodeExpanding.cs" />
+    <Compile Include="TreeView\NodeExpandingEventArgs.cs" />
+    <Compile Include="TreeView\TreeViewEdit.cs" />
+    <Compile Include="Controls\VerticalLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DockManager\DockManager.cs" />
+    <Compile Include="DockManager\DockPanel.cs" />
+    <Compile Include="DockManager\IDockPanel.cs" />
+    <Compile Include="DocumentManager\Document.cs" />
+    <Compile Include="DocumentManager\DocumentManager.cs" />
+    <Compile Include="BaseForm\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\FormBody.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseForm\FormCaption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseForm\FormCaptionButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TablePanelEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HyperlinkLabelEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PanelEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Spin\GenericSpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridViewEdit\GridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridViewEdit\GridViewEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\Columns\Column.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\Columns\DefaultColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\Columns\ExpandableColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\Columns\ImageColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\Columns\PropertyColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\IRowCollection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\ListComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\ListViewEditCellPaintingEventArgs.cs" />
+    <Compile Include="ListViewEdit\ListViewEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\Columns\CheckBoxColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\ListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\ListViewEdit.RowCollection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\ListViewFilterMode.cs" />
+    <Compile Include="ListViewEdit\ListViewHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\ListViewHeaderVisibilty.cs" />
+    <Compile Include="Popup\PopupControlHost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupMessage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PropertyGrid\PropertyGridEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StatusManager\StatusToolbarButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StatusManager\StatusToolbarLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabEdit\TabEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabEdit\TabEditCancelEventArgs.cs" />
+    <Compile Include="TabEdit\TabEditEventArgs.cs" />
+    <Compile Include="TabEdit\TabEditPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabEdit\TabEditPageCaption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabEdit\TabEditPageCollection.cs" />
+    <Compile Include="Forms\AddNewItemDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\ApplicationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\ApplicationFormFooter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Application\ApplicationFormHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ApplicationSplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Button\ButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Button\ButtonEditCollection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlHelper.cs" />
+    <Compile Include="Controls\Label\LabelEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseForm\FormQuickToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseForm\IQuickToolbar.cs" />
+    <Compile Include="Popup\PopupContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyGrid\GridCategoryItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PropertyGrid\GridItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PropertyGrid\GridItemCollection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PropertyGrid\GridPropertyItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GlyphButton\GlyphButtonType.cs" />
+    <Compile Include="Controls\GlyphButton\GlyphButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GlyphButton\GlyphButtonCollection.cs" />
+    <Compile Include="Controls\Numeric\LinearValueEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Numeric\AngularValueEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GlyphButton\GlyphButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DateTime\DateTimeEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\EnumEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Numeric\PercentValueEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Numeric\NumericEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TimeSpan\TimeSpanEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PropertyGrid\GridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon\ApplicationMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RibbonCommandVisibility.cs" />
+    <Compile Include="Ribbon\RibbonApplicationMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StatusManager\StatusManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RibbonToolbarButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RibbonControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RibbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RibbonPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RibbonPageCollection.cs" />
+    <Compile Include="Ribbon\RibbonPageGroup.cs" />
+    <Compile Include="Ribbon\RibbonPageGroupCollection.cs" />
+    <Compile Include="Controls\TextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RibbonToolbarLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupContainerEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Base\System.Base.csproj">
+      <Project>{657109ef-7a80-4cf3-af6c-fe192f99a7f6}</Project>
+      <Name>System.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Extensions\System.Core.csproj">
+      <Project>{657109EF-7A80-4CF3-AF6C-FE192F99A7F6}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Resources\System.Resources.csproj">
+      <Project>{BAAA95CF-14C5-4194-A036-3762E45BE743}</Project>
+      <Name>System.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Runtime\System.Runtime.csproj">
+      <Project>{dd70cc97-ca8f-407f-b60d-2f01ece7942e}</Project>
+      <Name>System.Runtime</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ApplicationAboutEdit.resx">
+      <DependentUpon>ApplicationAboutEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddNewItemDialog.resx">
+      <DependentUpon>AddNewItemDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FileDialog\FileDialogBase.resx">
+      <DependentUpon>FileDialogBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileDialog\OpenFileEdit.resx">
+      <DependentUpon>OpenFileEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ApplicationSubscriptionDialog.resx">
+      <DependentUpon>ApplicationSubscriptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LicenseAgreementDialog.resx">
+      <DependentUpon>LicenseAgreementDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizedStrings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ListViewEdit\ListViewEdit.Row.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\ListView.ColumnCollection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEdit\ListViewEdit.RowComparer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GISExpress.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

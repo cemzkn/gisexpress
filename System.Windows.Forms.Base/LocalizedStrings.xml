@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<LocalizedStrings>
+  <xs:schema id="LocalizedStrings" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="LocalizedStrings" msdata:IsDataSet="true" msdata:MainDataTable="Word" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Word" msdata:CaseSensitive="False">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="key" type="xs:string" />
+                <xs:element name="en-US" type="xs:string" minOccurs="0" />
+                <xs:element name="tr-TR" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="UniqueConstraint" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Word" />
+        <xs:field xpath="key" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <Word>
+    <key>Open</key>
+    <en-US>Open</en-US>
+    <tr-TR>Aç</tr-TR>
+  </Word>
+  <Word>
+    <key>Save</key>
+    <en-US>Save</en-US>
+    <tr-TR>Kaydet</tr-TR>
+  </Word>
+  <Word>
+    <key>OpenFile</key>
+    <en-US>Open File</en-US>
+    <tr-TR>Dosya Aç</tr-TR>
+  </Word>
+  <Word>
+    <key>NewFile</key>
+    <en-US>New File</en-US>
+    <tr-TR>Yeni Dosya</tr-TR>
+  </Word>
+  <Word>
+    <key>Search</key>
+    <en-US>Search</en-US>
+    <tr-TR>Ara</tr-TR>
+  </Word>
+  <Word>
+    <key>Type</key>
+    <en-US>Type</en-US>
+    <tr-TR>Tür</tr-TR>
+  </Word>
+  <Word>
+    <key>Size</key>
+    <en-US>Size</en-US>
+    <tr-TR>Boyut</tr-TR>
+  </Word>
+  <Word>
+    <key>Computer</key>
+    <en-US>Computer</en-US>
+    <tr-TR>Bilgisayar</tr-TR>
+  </Word>
+  <Word>
+    <key>RemovableStorageDevice</key>
+    <en-US>Removable Storage</en-US>
+    <tr-TR>Çıkarabilir Depolama</tr-TR>
+  </Word>
+  <Word>
+    <key>OpticalDiscDevice</key>
+    <en-US>Optical Disc</en-US>
+    <tr-TR>Optik Disk</tr-TR>
+  </Word>
+  <Word>
+    <key>DriveType.Fixed</key>
+    <en-US>Fixed Disk</en-US>
+    <tr-TR>Sabit Disk</tr-TR>
+  </Word>
+  <Word>
+    <key>DriveType.Removable</key>
+    <en-US>Removable Storage</en-US>
+    <tr-TR>Çıkarabilir Depolama</tr-TR>
+  </Word>
+  <Word>
+    <key>DriveType.CDRom</key>
+    <en-US>Optical Disc</en-US>
+    <tr-TR>Optik Disk</tr-TR>
+  </Word>
+  <Word>
+    <key>Desktop</key>
+    <en-US>Desktop</en-US>
+    <tr-TR>Masaüstü</tr-TR>
+  </Word>
+  <Word>
+    <key>Favorites</key>
+    <en-US>Favorites</en-US>
+    <tr-TR>Hızlı Erişim</tr-TR>
+  </Word>
+  <Word>
+    <key>Folder</key>
+    <en-US>Folder</en-US>
+    <tr-TR>Klasör</tr-TR>
+  </Word>
+  <Word>
+    <key>Up</key>
+    <en-US>Up</en-US>
+    <tr-TR>Yukarı</tr-TR>
+  </Word>
+  <Word>
+    <key>Backward</key>
+    <en-US>Backward</en-US>
+    <tr-TR>Geri</tr-TR>
+  </Word>
+  <Word>
+    <key>Forward</key>
+    <en-US>Forward</en-US>
+    <tr-TR>İleri</tr-TR>
+  </Word>
+  <Word>
+    <key>Refresh</key>
+    <en-US>Refresh</en-US>
+    <tr-TR>Yenile</tr-TR>
+  </Word>
+  <Word>
+    <key>FileName</key>
+    <en-US>File name</en-US>
+    <tr-TR>Dosya adı</tr-TR>
+  </Word>
+  <Word>
+    <key>LastWriteTime</key>
+    <en-US>Modified Date</en-US>
+    <tr-TR>Değiştirme Tarihi</tr-TR>
+  </Word>
+  <Word>
+    <key>FileOpenDialog</key>
+    <en-US>Open File</en-US>
+    <tr-TR>Dosya Aç</tr-TR>
+  </Word>
+  <Word>
+    <key>FileSaveDialog</key>
+    <en-US>Save File</en-US>
+    <tr-TR>Dosya Kaydet</tr-TR>
+  </Word>
+  <Word>
+    <key>LicenseAgreement</key>
+    <en-US>License Agreement</en-US>
+    <tr-TR>Lisans Sözleşmesi</tr-TR>
+  </Word>
+  <Word>
+    <key>LicenseAgreement.Title</key>
+    <en-US>You must agree with the license agreement below to proceed</en-US>
+    <tr-TR>Devam etmek için aşağıdaki lisans sözleşmesini onaylamalısınız</tr-TR>
+  </Word>
+  <Word>
+    <key>LicenseAgreement.Yes</key>
+    <en-US>Yes, I agree to the License Agreement</en-US>
+    <tr-TR>Evet, Lisans Sözleşmesini kabul ediyorum</tr-TR>
+  </Word>
+  <Word>
+    <key>LicenseAgreement.No</key>
+    <en-US>No, I do not agree</en-US>
+    <tr-TR>Hayır, kabul etmiyorum</tr-TR>
+  </Word>
+  <Word>
+    <key>Loading</key>
+    <en-US>Loading...</en-US>
+    <tr-TR>Yükleniyor...</tr-TR>
+  </Word>
+  <Word>
+    <key>Saving</key>
+    <en-US>Saving...</en-US>
+    <tr-TR>Saklanıyor...</tr-TR>
+  </Word>
+  <Word>
+    <key>7818F222-096C-452C-A7DC-27F4482AC2A4</key>
+    <en-US>Authorization Information</en-US>
+    <tr-TR>Yetki Bilgisi</tr-TR>
+  </Word>
+  <Word>
+    <key>UserRepositoryItemsEditCaption</key>
+    <en-US>User Repositories</en-US>
+    <tr-TR>Kullanıcı Kütüphaneleri</tr-TR>
+  </Word>
+  <Word>
+    <key>CaptionButton.Minimize</key>
+    <en-US>Minimize</en-US>
+    <tr-TR>Simge Durumuna Getir</tr-TR>
+  </Word>
+  <Word>
+    <key>CaptionButton.Maximize</key>
+    <en-US>Maximize</en-US>
+    <tr-TR>Ekranı Kapla</tr-TR>
+  </Word>
+  <Word>
+    <key>CaptionButton.Restore</key>
+    <en-US>Restore</en-US>
+    <tr-TR>Önceki Boyut</tr-TR>
+  </Word>
+  <Word>
+    <key>CaptionButton.Close</key>
+    <en-US>Close</en-US>
+    <tr-TR>Kapat</tr-TR>
+  </Word>
+  <Word>
+    <key>Close</key>
+    <en-US>Close</en-US>
+    <tr-TR>Kapat</tr-TR>
+  </Word>
+  <Word>
+    <key>CloseDocument</key>
+    <en-US>Close</en-US>
+    <tr-TR>Kapat</tr-TR>
+  </Word>
+  <Word>
+    <key>CloseAllDocuments</key>
+    <en-US>Close All</en-US>
+    <tr-TR>Tümünü Kapat</tr-TR>
+  </Word>
+  <Word>
+    <key>CloseAllDocumentsButThis</key>
+    <en-US>Close All But This</en-US>
+    <tr-TR>Diğerlerini Kapat</tr-TR>
+  </Word>
+  <Word>
+    <key>FileSaveDialog.AlreadyExists</key>
+    <en-US>
+      {0} already exists.
+      Do you want to replace it?
+    </en-US>
+    <tr-TR>
+      {0} zaten var.
+      Varolan dosya ile değiştirilsin mi?
+    </tr-TR>
+  </Word>
+  <Word>
+    <key>ApplicationSubscription.Caption</key>
+    <en-US>GISExpress Activation</en-US>
+    <tr-TR>GISExpress Aktivasyon</tr-TR>
+  </Word>
+  <Word>
+    <key>ApplicationSubscription.Title</key>
+    <en-US>Please enter the following information to activate your copy of GISExpress</en-US>
+    <tr-TR>GISExpress ürün kopyanızı etkinleştirmek için aşağıdaki bilgileri giriniz</tr-TR>
+  </Word>
+</LocalizedStrings>
