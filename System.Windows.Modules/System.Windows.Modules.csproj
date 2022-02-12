@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73F40B12-7E14-460E-9384-80ABD2C0E164}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Windows.Modules</RootNamespace>
+    <AssemblyName>System.Windows.Modules</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GISExpress.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommandManager\IApplicationCommandGroup.cs" />
+    <Compile Include="CommandManager\IApplicationCommandPage.cs" />
+    <Compile Include="Components\Selection\BufferOptions.cs" />
+    <Compile Include="Components\Selection\FeatureSelectionComponent.cs" />
+    <Compile Include="Components\Selection\SelectionDoWorkEventArgs.cs" />
+    <Compile Include="Components\Selection\SelectionToPolygonEventArgs.cs" />
+    <Compile Include="Components\Selection\SelectionSplitEventArgs.cs" />
+    <Compile Include="Components\Selection\SelectionOverlayEventArgs.cs" />
+    <Compile Include="Components\Selection\TransformOptions.cs" />
+    <Compile Include="Controls\ApplicationPropertyGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CRS\CoordinateSystemDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\CRS\CoordinateSystemDialog.Designer.cs">
+      <DependentUpon>CoordinateSystemDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CRS\CoordinateSystemEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CRS\CoordinateSystemEdit.Designer.cs">
+      <DependentUpon>CoordinateSystemEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CRS\CoordinateSystemDropDownEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DragOffsetPointEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FeaturePointEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MapLayerFieldListDropDownEdit.cs" />
+    <Compile Include="Controls\ApplicationStartPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ApplicationLookupEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CoordinateBaseEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CoordinatesEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MapLayerDropDownEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ProjectProperties.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PropertiesEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HatchStyleDropDownEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScaleOffsetPointEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RotationOffsetPointEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Status\AligmentGuidesSettingsEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Status\ObjectSnapSettingsEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Status\ViewportEdit.cs" />
+    <Compile Include="DockManager\IProjectDockPanel.cs" />
+    <Compile Include="DockManager\IPropertiesDockPanel.cs" />
+    <Compile Include="DocumentManager\IDocument.cs" />
+    <Compile Include="Feature\FeatureItem.cs" />
+    <Compile Include="Feature\FeatureLayerPropertyDescriptor.cs" />
+    <Compile Include="IO\ImageFileHandler.cs" />
+    <Compile Include="MainModule\MainModule.Commands.cs" />
+    <Compile Include="MainModule\MainModule.Events.cs" />
+    <Compile Include="ProjectManager\IProjectFileInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CommandManager\IApplicationCommand.cs" />
+    <Compile Include="Controls\Base\IApplicationControl.cs" />
+    <Compile Include="Controls\Base\IPropertyGrid.cs" />
+    <Compile Include="Controls\ProjectView\IProjectView.cs" />
+    <Compile Include="Controls\Map\MapControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ProjectView\ProjectView.cs" />
+    <Compile Include="Controls\ProjectView\ProjectViewCategoryNode.cs" />
+    <Compile Include="Controls\ProjectView\ContextMenuOpeningEventArgs.cs" />
+    <Compile Include="Controls\ProjectView\ProjectViewDrawingStyleNode.cs" />
+    <Compile Include="Controls\ProjectView\ProjectViewLayerNode.cs" />
+    <Compile Include="Controls\ProjectView\ProjectViewNode.cs" />
+    <Compile Include="Controls\ProjectView\ProjectViewSolutionNode.cs" />
+    <Compile Include="DockManager\IDockManager.cs" />
+    <Compile Include="DocumentManager\IDocumentManager.cs" />
+    <Compile Include="EventArgs\ActiveProjectChangedEventArgs.cs" />
+    <Compile Include="EventArgs\FeatureEventArgs.cs" />
+    <Compile Include="IApplicationMainForm.cs" />
+    <Compile Include="Snap\ISnapObjectCollection.cs" />
+    <Compile Include="Snap\SnapObject.cs" />
+    <Compile Include="Snap\SnapObjectCollection.cs" />
+    <Compile Include="StatusManager\IApplicationStatusManager.cs" />
+    <Compile Include="CommandManager\IApplicationCommandManager.cs" />
+    <Compile Include="IO\IApplicationFile.cs" />
+    <Compile Include="IO\IApplicationFileManager.cs" />
+    <Compile Include="EventArgs\ApplicationFile.cs" />
+    <Compile Include="IO\ApplicationFileManager.cs" />
+    <Compile Include="EventArgs\MapEventArgs.cs" />
+    <Compile Include="EventArgs\ProjectCancelEventArgs.cs" />
+    <Compile Include="IO\ApplicationFileAttribute.cs" />
+    <Compile Include="EventArgs\ApplicationFileEventArgs.cs" />
+    <Compile Include="MainModule\MainModule.cs" />
+    <Compile Include="Modules\ApplicationModuleAttribute.cs" />
+    <Compile Include="Modules\ApplicationModule.cs" />
+    <Compile Include="ProjectManager\BlankProject.cs" />
+    <Compile Include="EventArgs\ApplicationLoadEventArgs.cs" />
+    <Compile Include="EventArgs\ProjectEventArgs.cs" />
+    <Compile Include="Modules\ApplicationModuleManager.cs" />
+    <Compile Include="IApplication.cs" />
+    <Compile Include="Modules\IApplicationModule.cs" />
+    <Compile Include="Modules\IApplicationModuleManager.cs" />
+    <Compile Include="ProjectManager\IApplicationProjectManager.cs" />
+    <Compile Include="ProjectManager\ProjectFileInfo.cs" />
+    <Compile Include="ProjectManager\IProject.cs" />
+    <Compile Include="ProjectManager\ApplicationProjectManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CRS\CoordinateSystemDialog.resx">
+      <DependentUpon>CoordinateSystemDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CRS\CoordinateSystemEdit.resx">
+      <DependentUpon>CoordinateSystemEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectManager\BlankProject.resx">
+      <DependentUpon>BlankProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Base\System.Base.csproj">
+      <Project>{657109EF-7A80-4CF3-AF6C-FE192F99A7F6}</Project>
+      <Name>System.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.CoordinateSystems\System.CoordinateSystems.csproj">
+      <Project>{b9baa5a6-9c7c-414a-b1c6-733b77417a9d}</Project>
+      <Name>System.CoordinateSystems</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Data.Base\System.Data.Base.csproj">
+      <Project>{50996028-3dd9-421b-82b7-17596f676f32}</Project>
+      <Name>System.Data.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Extensions\System.Core.csproj">
+      <Project>{657109ef-7a80-4cf3-af6c-fe192f99a7f6}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Geometries\System.Geometries.csproj">
+      <Project>{67143bd2-83bd-45a1-bf3f-8548a35111c3}</Project>
+      <Name>System.Geometries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Resources\System.Resources.csproj">
+      <Project>{baaa95cf-14c5-4194-a036-3762e45be743}</Project>
+      <Name>System.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Runtime\System.Runtime.csproj">
+      <Project>{dd70cc97-ca8f-407f-b60d-2f01ece7942e}</Project>
+      <Name>System.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Windows.Forms.Base\System.Windows.Forms.Base.csproj">
+      <Project>{a48ff71b-cfbd-47e9-86b0-58a6d73bc333}</Project>
+      <Name>System.Windows.Forms.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Windows.Forms.ColorEdit\System.Windows.Forms.ColorEdit.csproj">
+      <Project>{d773b0fc-9749-4971-bd1b-eee439d884e5}</Project>
+      <Name>System.Windows.Forms.ColorEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Workspace\System.Workspace.csproj">
+      <Project>{4aaba7b8-e7c5-43cc-816d-96572a79d23c}</Project>
+      <Name>System.Workspace</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LocalizedStrings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainModule\MainModule.Selection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GISExpress.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

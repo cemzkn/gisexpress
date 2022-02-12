@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<LocalizedStrings>
+  <xs:schema id="LocalizedStrings" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="LocalizedStrings" msdata:IsDataSet="true" msdata:MainDataTable="Word" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Word" msdata:CaseSensitive="False">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="key" type="xs:string" />
+                <xs:element name="en-US" type="xs:string" minOccurs="0" />
+                <xs:element name="tr-TR" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="UniqueConstraint" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Word" />
+        <xs:field xpath="key" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <Word>
+    <key>ApplicationStartPage</key>
+    <en-US>Start Page</en-US>
+    <tr-TR>Başlangıç</tr-TR>
+  </Word>
+  <Word>
+    <key>Recent</key>
+    <en-US>Recent</en-US>
+    <tr-TR>Son Kullanılan</tr-TR>
+  </Word>
+  <Word>
+    <key>ApplicationExit</key>
+    <en-US>Exit</en-US>
+    <tr-TR>Ugulamadan Çık</tr-TR>
+  </Word>
+  <Word>
+    <key>ApplicationSettings</key>
+    <en-US>Options &amp; Help</en-US>
+    <tr-TR>Seçenekler &amp; Yardım</tr-TR>
+  </Word>
+  <Word>
+    <key>ApplicationSettings.Caption</key>
+    <en-US>Options</en-US>
+    <tr-TR>Seçenekler</tr-TR>
+  </Word>
+  <Word>
+    <key>ApplicationSettings.Title</key>
+    <en-US>Use options below to customize application</en-US>
+    <tr-TR>Uygulamayı özelleştirmek için aşağıdaki seçenekleri kullanın</tr-TR>
+  </Word>
+  <Word>
+    <key>About</key>
+    <en-US>About</en-US>
+    <tr-TR>Hakkında</tr-TR>
+  </Word>
+  <Word>
+    <key>TermsOfUse</key>
+    <en-US>Terms Of Use</en-US>
+    <tr-TR>Kullanım Şartları</tr-TR>
+  </Word>
+  <Word>
+    <key>LegalCopyright</key>
+    <en-US>Copyright © GISExpress 2015-2022. All Rights Reserved.</en-US>
+    <tr-TR>Telif Hakkı 2015-2022 GISExpress. Tüm hakları saklıdır.</tr-TR>
+  </Word>
+  <Word>
+    <key>Author</key>
+    <en-US>Author</en-US>
+    <tr-TR>Geliştirici</tr-TR>
+  </Word>
+  <Word>
+    <key>Version</key>
+    <en-US>Version</en-US>
+    <tr-TR>Sürüm</tr-TR>
+  </Word>
+  <Word>
+    <key>CloseProject</key>
+    <en-US>Close</en-US>
+    <tr-TR>Kapat</tr-TR>
+  </Word>
+  <Word>
+    <key>Undo</key>
+    <en-US>Undo</en-US>
+    <tr-TR>Geri al</tr-TR>
+  </Word>
+  <Word>
+    <key>Redo</key>
+    <en-US>Redo</en-US>
+    <tr-TR>Yinele</tr-TR>
+  </Word>
+  <Word>
+    <key>NewProject</key>
+    <en-US>New Project</en-US>
+    <tr-TR>Yeni Proje</tr-TR>
+  </Word>
+  <Word>
+    <key>OpenProject</key>
+    <en-US>Open Project...</en-US>
+    <tr-TR>Proje Aç...</tr-TR>
+  </Word>
+  <Word>
+    <key>SaveProject</key>
+    <en-US>Save</en-US>
+    <tr-TR>Kaydet</tr-TR>
+  </Word>
+  <Word>
+    <key>SaveProjectAs</key>
+    <en-US>Save As...</en-US>
+    <tr-TR>Farklı Kaydet...</tr-TR>
+  </Word>
+  <Word>
+    <key>SaveProjectAll</key>
+    <en-US>Save All</en-US>
+    <tr-TR>Tümünü Kaydet</tr-TR>
+  </Word>
+  <Word>
+    <key>ProjectUnsavedChangesMessage</key>
+    <en-US>Project "{0}" has unsaved changes. Would you like to save your changes?</en-US>
+    <tr-TR>"{0}" projesinde kaydedilmemiş değişiklikler var. Yaptığınız değişiklikleri kaydetmek ister misiniz?</tr-TR>
+  </Word>
+  <Word>
+    <key>Project</key>
+    <en-US>Project</en-US>
+    <tr-TR>Proje</tr-TR>
+  </Word>
+  <Word>
+    <key>Properties</key>
+    <en-US>Properties</en-US>
+    <tr-TR>Özellikler</tr-TR>
+  </Word>
+  <Word>
+    <key>MainPage</key>
+    <en-US>Drawing</en-US>
+    <tr-TR>Çizim</tr-TR>
+  </Word>
+  <Word>
+    <key>Selection</key>
+    <en-US>Selection</en-US>
+    <tr-TR>Seçim</tr-TR>
+  </Word>
+  <Word>
+    <key>Select</key>
+    <en-US>Select</en-US>
+    <tr-TR>Seç</tr-TR>
+  </Word>
+  <Word>
+    <key>SelectFeature</key>
+    <en-US>Select</en-US>
+    <tr-TR>Seç</tr-TR>
+  </Word>
+  <Word>
+    <key>SelectFeatures</key>
+    <en-US>Selection</en-US>
+    <tr-TR>Seçim</tr-TR>
+  </Word>
+  <Word>
+    <key>SelectionSet</key>
+    <en-US>Selection</en-US>
+    <tr-TR>Seçim</tr-TR>
+  </Word>
+  <Word>
+    <key>Operations</key>
+    <en-US>Operations</en-US>
+    <tr-TR>İşlemler</tr-TR>
+  </Word>
+  <Word>
+    <key>SelectAll</key>
+    <en-US>Select All</en-US>
+    <tr-TR>Tümünü Seç</tr-TR>
+  </Word>
+  <Word>
+    <key>DeselectAll</key>
+    <en-US>Deselect All</en-US>
+    <tr-TR>Seçimi Temizle</tr-TR>
+  </Word>
+  <Word>
+    <key>ReverseSelection</key>
+    <en-US>Reverse Selection</en-US>
+    <tr-TR>Diğerlerini Seç</tr-TR>
+  </Word>
+  <Word>
+    <key>SelectByRect</key>
+    <en-US>Select By Window</en-US>
+    <tr-TR>Pencere ile Seç</tr-TR>
+  </Word>
+  <Word>
+    <key>SelectByArea</key>
+    <en-US>Select By Area</en-US>
+    <tr-TR>Alan ile Seç</tr-TR>
+  </Word>
+  <Word>
+    <key>Intersection</key>
+    <en-US>Intersection</en-US>
+    <tr-TR>Kesişim</tr-TR>
+  </Word>
+  <Word>
+    <key>Union</key>
+    <en-US>Union</en-US>
+    <tr-TR>Birleşim</tr-TR>
+  </Word>
+  <Word>
+    <key>Difference</key>
+    <en-US>Subtract</en-US>
+    <tr-TR>Fark</tr-TR>
+  </Word>
+  <Word>
+    <key>SymmetricDifference</key>
+    <en-US>Difference</en-US>
+    <tr-TR>Fark</tr-TR>
+  </Word>
+  <Word>
+    <key>SplitGeometries</key>
+    <en-US>Split</en-US>
+    <tr-TR>Ayır</tr-TR>
+  </Word>
+  <Word>
+    <key>LinesToPolygon</key>
+    <en-US>Lines to Polygon</en-US>
+    <tr-TR>Alana Dönüştür</tr-TR>
+  </Word>
+  <Word>
+    <key>Copy</key>
+    <en-US>Copy</en-US>
+    <tr-TR>Kopyala</tr-TR>
+  </Word>
+  <Word>
+    <key>Delete</key>
+    <en-US>Delete</en-US>
+    <tr-TR>Sil</tr-TR>
+  </Word>
+  <Word>
+    <key>Cancel</key>
+    <en-US>Cancel</en-US>
+    <tr-TR>Vazgeç</tr-TR>
+  </Word>
+  <Word>
+    <key>AddNewCategory</key>
+    <en-US>Add New Category</en-US>
+    <tr-TR>Yeni Kategori Ekle</tr-TR>
+  </Word>
+  <Word>
+    <key>AddNewLayer</key>
+    <en-US>Add New Layer</en-US>
+    <tr-TR>Yeni Katman Ekle</tr-TR>
+  </Word>
+  <Word>
+    <key>AddNewShpLayer</key>
+    <en-US>Add New Shape Layer</en-US>
+    <tr-TR>Yeni Shape Katmanı Ekle</tr-TR>
+  </Word>
+  <Word>
+    <key>AddNewKmlLayer</key>
+    <en-US>Add New Kml Layer</en-US>
+    <tr-TR>Yeni Kml Katmanı Ekle</tr-TR>
+  </Word>
+  <Word>
+    <key>AddNewExistingLayer</key>
+    <en-US>Add Existing Layer...</en-US>
+    <tr-TR>Var Olan Katman Ekle...</tr-TR>
+  </Word>
+  <Word>
+    <key>ViewportSettings</key>
+    <en-US>Viewport</en-US>
+    <tr-TR>Görünüm</tr-TR>
+  </Word>
+  <Word>
+    <key>ViewportTop2D.Text</key>
+    <en-US>Top</en-US>
+    <tr-TR>Üst</tr-TR>
+  </Word>
+  <Word>
+    <key>ViewportPerspective3D.Text</key>
+    <en-US>Perspective</en-US>
+    <tr-TR>Perspektif</tr-TR>
+  </Word>
+  <Word>
+    <key>ObjectSnapSettings</key>
+    <en-US>Object Snap</en-US>
+    <tr-TR>Obje Yakala</tr-TR>
+  </Word>
+  <Word>
+    <key>AligmentGuidesSettings</key>
+    <en-US>Alignment Guides</en-US>
+    <tr-TR>Açı Klavuzları</tr-TR>
+  </Word>
+  <Word>
+    <key>AlignmentGuide90.Text</key>
+    <en-US>90°</en-US>
+    <tr-TR>90°</tr-TR>
+  </Word>
+  <Word>
+    <key>AlignmentGuide45.Text</key>
+    <en-US>45°</en-US>
+    <tr-TR>45°</tr-TR>
+  </Word>
+  <Word>
+    <key>AlignmentGuide30.Text</key>
+    <en-US>30°</en-US>
+    <tr-TR>30°</tr-TR>
+  </Word>
+  <Word>
+    <key>AlignmentGuide15.Text</key>
+    <en-US>15°</en-US>
+    <tr-TR>15°</tr-TR>
+  </Word>
+  <Word>
+    <key>AlignmentGuidesEnabled.Text</key>
+    <en-US>Aligment Guides</en-US>
+    <tr-TR>Açı Klavuzları</tr-TR>
+  </Word>
+  <Word>
+    <key>Map.ZoomRate</key>
+    <en-US>Zoom Rate (%)</en-US>
+    <tr-TR>Yaklaşma Oranı (%)</tr-TR>
+  </Word>
+  <Word>
+    <key>Drawing</key>
+    <en-US>Drawing</en-US>
+    <tr-TR>Çizim</tr-TR>
+  </Word>
+  <Word>
+    <key>Scale</key>
+    <en-US>Scale</en-US>
+    <tr-TR>Ölçek</tr-TR>
+  </Word>
+  <Word>
+    <key>Location</key>
+    <en-US>Location</en-US>
+    <tr-TR>Konum</tr-TR>
+  </Word>
+  <Word>
+    <key>ZoomToExtent</key>
+    <en-US>Extents</en-US>
+    <tr-TR>Sınırlar</tr-TR>
+  </Word>
+  <Word>
+    <key>ZoomTo</key>
+    <en-US>Zoom Window</en-US>
+    <tr-TR>Seçime Yaklaş</tr-TR>
+  </Word>
+  <Word>
+    <key>ZoomIn</key>
+    <en-US>Zoom In</en-US>
+    <tr-TR>Yaklaş</tr-TR>
+  </Word>
+  <Word>
+    <key>ZoomOut</key>
+    <en-US>Zoom Out</en-US>
+    <tr-TR>Uzaklaş</tr-TR>
+  </Word>
+  <Word>
+    <key>Linear</key>
+    <en-US>Linear</en-US>
+    <tr-TR>Doğrusal</tr-TR>
+  </Word>
+  <Word>
+    <key>Angular</key>
+    <en-US>Angular</en-US>
+    <tr-TR>Açısal</tr-TR>
+  </Word>
+  <Word>
+    <key>LinearUnit</key>
+    <en-US>Unit</en-US>
+    <tr-TR>Birim</tr-TR>
+  </Word>
+  <Word>
+    <key>LinearDisplayUnit</key>
+    <en-US>Display Unit</en-US>
+    <tr-TR>Gösterim Birimi</tr-TR>
+  </Word>
+  <Word>
+    <key>AngularDisplayUnit</key>
+    <en-US>Display Unit</en-US>
+    <tr-TR>Gösterim Birimi</tr-TR>
+  </Word>
+  <Word>
+    <key>NumberDecimalDigits</key>
+    <en-US>Decimal Digits</en-US>
+    <tr-TR>Ondalık Basamak</tr-TR>
+  </Word>
+  <Word>
+    <key>AngularDecimalDigits</key>
+    <en-US>Decimal Digits</en-US>
+    <tr-TR>Ondalık Basamak</tr-TR>
+  </Word>
+  <Word>
+    <key>LinearDecimalDigits</key>
+    <en-US>Decimal Digits</en-US>
+    <tr-TR>Ondalık Basamak</tr-TR>
+  </Word>
+  <Word>
+    <key>NorthAngle</key>
+    <en-US>North Angle</en-US>
+    <tr-TR>Kuzey Açısı</tr-TR>
+  </Word>
+  <Word>
+    <key>BufferAngle</key>
+    <en-US>Buffer Angle</en-US>
+    <tr-TR>Tampon Açısı</tr-TR>
+  </Word>
+  <Word>
+    <key>UnableToOpenProjectFile</key>
+    <en-US>Unable to open project file, the file is invalid or corrupt.</en-US>
+    <tr-TR>Proje dosyası açılamıyor, dosya geçersiz veya bozuk.</tr-TR>
+  </Word>
+  <Word>
+    <key>SnapEnabled.Text</key>
+    <en-US>Enable Object Snap</en-US>
+    <tr-TR>Obje Yakalama Açık</tr-TR>
+  </Word>
+  <Word>
+    <key>SnapEndPointEnabled.Text</key>
+    <en-US>End Point</en-US>
+    <tr-TR>Son Nokta</tr-TR>
+  </Word>
+  <Word>
+    <key>SnapMidPointEnabled.Text</key>
+    <en-US>Middle Point</en-US>
+    <tr-TR>Orta Nokta</tr-TR>
+  </Word>
+  <Word>
+    <key>SnapCenterEnabled.Text</key>
+    <en-US>Center</en-US>
+    <tr-TR>Merkez</tr-TR>
+  </Word>
+  <Word>
+    <key>CoordinatesEdit.Caption</key>
+    <en-US>Geometry attributes</en-US>
+    <tr-TR>Geometri özellikleri</tr-TR>
+  </Word>
+  <Word>
+    <key>CoordinatesEdit.Title</key>
+    <en-US>View and edit any of the geometry attributes on the grid</en-US>
+    <tr-TR>Geometri özelliklerini grid üzerinde görüntüleyin ve düzenleyin</tr-TR>
+  </Word>
+  <Word>
+    <key>MapLayerDropDownEdit.Empty</key>
+    <en-US>Choose a layer</en-US>
+    <tr-TR>Bir katman seçin</tr-TR>
+  </Word>
+  <Word>
+    <key>SelectOffsetPointNullText</key>
+    <en-US>Select an offset point</en-US>
+    <tr-TR>Ofset noktası seçin</tr-TR>
+  </Word>
+  <Word>
+    <key>PreviewBox.Top</key>
+    <en-US>Top</en-US>
+    <tr-TR>Üst</tr-TR>
+  </Word>
+  <Word>
+    <key>PreviewBox.Bottom</key>
+    <en-US>Bottom</en-US>
+    <tr-TR>Alt</tr-TR>
+  </Word>
+  <Word>
+    <key>PreviewBox.East</key>
+    <en-US>E</en-US>
+    <tr-TR>E</tr-TR>
+  </Word>
+  <Word>
+    <key>PreviewBox.West</key>
+    <en-US>W</en-US>
+    <tr-TR>W</tr-TR>
+  </Word>
+  <Word>
+    <key>PreviewBox.North</key>
+    <en-US>N</en-US>
+    <tr-TR>N</tr-TR>
+  </Word>
+  <Word>
+    <key>PreviewBox.South</key>
+    <en-US>S</en-US>
+    <tr-TR>S</tr-TR>
+  </Word>
+  <Word>
+    <key>DataSourceEdit.ColumnName</key>
+    <en-US>Name</en-US>
+    <tr-TR>Adı</tr-TR>
+  </Word>
+  <Word>
+    <key>DataSourceEdit.DataType</key>
+    <en-US>Data Type</en-US>
+    <tr-TR>Veri Türü</tr-TR>
+  </Word>
+  <Word>
+    <key>DataSourceEdit.IsRequired</key>
+    <en-US>Required</en-US>
+    <tr-TR>Gerekli</tr-TR>
+  </Word>
+  <Word>
+    <key>DataSourceEdit.AddRow</key>
+    <en-US>New Attribute</en-US>
+    <tr-TR>Öznitelik Ekle</tr-TR>
+  </Word>
+  <Word>
+    <key>DataSourceEdit.RemoveRow</key>
+    <en-US>Remove</en-US>
+    <tr-TR>Sil</tr-TR>
+  </Word>
+  <Word>
+    <key>CurrentWindow</key>
+    <en-US>Current Window</en-US>
+    <tr-TR>Geçerli Pencere</tr-TR>
+  </Word>
+  <Word>
+    <key>InstalledModules</key>
+    <en-US>Installed Modules</en-US>
+    <tr-TR>Yüklü Modüller</tr-TR>
+  </Word>
+  <Word>
+    <key>InstalledDataProviders</key>
+    <en-US>Installed Data Providers</en-US>
+    <tr-TR>Yüklü Veri Sağlayıcılar</tr-TR>
+  </Word>
+</LocalizedStrings>
