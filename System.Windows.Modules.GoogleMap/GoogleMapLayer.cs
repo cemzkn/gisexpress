@@ -90,9 +90,9 @@ namespace System.Windows.Modules.GoogleMap
             return Provider.CoordinateSystem;
         }
 
-        public override IEnvelope GetBounds(ICoordinateSystem target)
+        public override IEnvelope GetBounds()
         {
-            return Provider.WorldBounds.Transform(Provider.CoordinateSystem.CreateTransform(target));
+            return Provider.WorldBounds.Transform(Transform);
         }
 
         protected override bool OnRenderFeatures(MapCanvas canvas, IEnvelope bounds)

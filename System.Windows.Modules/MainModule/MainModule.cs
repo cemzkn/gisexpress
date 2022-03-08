@@ -33,6 +33,7 @@ using System.Data;
 using System.Drawing;
 using System.Geometries;
 using System.Resources;
+using System.Runtime;
 using System.Windows.Forms;
 using System.Windows.Forms.Ribbon;
 using System.Windows.Modules.Controls;
@@ -223,36 +224,23 @@ namespace System.Windows.Modules
         {
             var e = new ApplicationLoadEventArgs(this);
 
-            //if (LicenseManager.IsLicensed(typeof(DataProvider)))
-            {
-                Projects = new ApplicationProjectManager(this);
-                Modules = new ApplicationModuleManager(this);
-                DropDowns = new Dictionary<Type, PopupContainerEdit>();
-                
-                GeometryFactory.Register();
-                
-                Modules.RegisterAll();
-                Load.InvokeSafely(e);
-                RegisterEvents();
-            }
+            Projects = new ApplicationProjectManager(this);
+            Modules = new ApplicationModuleManager(this);
+            DropDowns = new Dictionary<Type, PopupContainerEdit>();
+
+            GeometryFactory.Register();
+            TypeFactory.Default.Register<IOperandFactory, OperandFactory>();
+
+            Modules.RegisterAll();
+            Load.InvokeSafely(e);
+            RegisterEvents();
         }
 
         public void InitModulesGraphics()
         {
-            //if (LicenseManager.IsLicensed(typeof(DataProvider)))
-            //{
             Form.DocumentManager.AddDocument(new ApplicationStartPage(this));
             Initializing.InvokeSafely<ApplicationLoadEventArgs>(this);
             Form.DockManager.ProjectPanel.Activate();
-            //}
-            //else
-            //{
-            //    // License expired
-            //    var e = new SecurityException(Localization.Localize("LicenseException"));
-
-            //    e.ShowMessage(Form);
-            //    ApplicationEnvironment.Kill();
-            //}
         }
 
         protected override void OnCancel()

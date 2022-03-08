@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/System.Windows.App/bin
+/System.Windows.App/obj
+/System.Windows.Forms.Base/bin
+/System.Windows.Forms.Base/obj
+/System.Windows.Forms.ColorEdit/bin
+/System.Windows.Forms.ColorEdit/obj
+/System.Windows.Modules/bin
+/System.Windows.Modules/obj
+/System.Windows.Modules.Data/bin
+/System.Windows.Modules.Data/obj/Debug
+/System.Windows.Modules.Editing/bin
+/System.Windows.Modules.Editing/obj/Debug
+/System.Windows.Modules.GoogleMap/bin
+/System.Windows.Modules.GoogleMap/obj

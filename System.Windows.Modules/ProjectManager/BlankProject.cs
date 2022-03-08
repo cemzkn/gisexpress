@@ -307,11 +307,13 @@ namespace System.Windows.Modules.Controls
             {
                 if (layer.Visibility)
                 {
-                    foreach (IFeature feature in layer.GetFeatures(bounds))
+                    IEnvelope e = bounds.Transform(layer.InverseTransform);
+
+                    foreach (IFeature feature in layer.GetFeatures(e))
                     {
                         IGeometry g = feature.GetGeometry();
 
-                        if (g.HasValue() && g.IsIntersects(bounds))
+                        if (g.HasValue() && g.IsIntersects(e))
                         {
                             yield return new FeatureItem(this, layer, feature);
                         }
